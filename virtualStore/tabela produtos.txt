@@ -5,6 +5,6 @@ descricao text null,
 preco varchar(30) null,
 quantidade varchar(30) null,
 imagem varchar(30) null,
-data date null,
+data varchar(10) null,
 primary key(idproduto)
 );
