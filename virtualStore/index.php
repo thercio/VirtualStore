@@ -28,6 +28,8 @@
 			</td>
 			<td><input type="submit" name="Aceitar" id="Aceitar" value="Buscar Produtos" /></td>
 		</tr>
+	</form>
+
 		<tr class="tr2">
 			<td colspan="8">Lista de produtos</td>
 		</tr>
@@ -60,6 +62,8 @@
 				$preco = $row['preco'];
 				$quantidade = $row['quantidade'];
 				$data = $row['data'];
+
+				//$adicionar = '<a href="carrinho.php?idproduto=' . $row['idproduto'] . '"title="' . $row['nome'] . '"> Adicionar </a>';
 			
 		?>
 
@@ -71,10 +75,20 @@
 			<td>R$ <?php printf("%s\n", $preco); ?></td>
 			<td><?php printf("%s\n", $quantidade); ?></td>
 			<td><?php printf("%s\n", $data); ?></td>
-			<td>Adicionar</td>
+			<td>
+				<form action="carrinho.php" method="post" name="comprar">
+					<input name="id_txt" type="hidden" value="<?php printf("%s\n", $idproduto); ?>"/>
+					<input name="nome" type="hidden" value="<?php printf("%s\n", $nome); ?>"/>
+					<input name="preco" type="hidden" value="<?php printf("%s\n", $preco); ?>"/>
+					<input name="quantidade" type="hidden" value="1"/>
+					<input name="Comprar" type="submit" value="Comprar"/>
+				</form>
+			</td>
 		</tr>
-		<?php } ?>
+		<?php }
+
+		$conexao->close(); ?>
 	</table>
-	</form>
+	
 </body>
 </html>

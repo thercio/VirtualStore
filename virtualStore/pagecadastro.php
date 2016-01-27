@@ -12,18 +12,6 @@
 		<h1>Loja Virtual</h1>
 		<h3>thercio01395@hotmail.com</h3>
 		<a href="index.php">Home</a>
-		<!--
-
-		
-			ESTOU NESTE VÍDEO
-				AINDA NÃO O ASSISTI
-			https://www.youtube.com/watch?v=6zIQoVpQqzc&index=15&list=PLxNM4ef1BpxikUFzfzEk-yRS5g7hmVZWx
-				VIDEO 15
-			ASSISTI-LI PARA CONTINUAR
-
-
-		 -->
-
 	</header>
 	<form id="cadas" enctype="multipart/form-data" name="cadas" method="post" action="cadastro.php">
 		<table border="0">
