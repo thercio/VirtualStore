@@ -1,0 +1,27 @@
+header{
+	background: #0099aa;
+	color: #eeeeee;
+}
+
+.tr1{
+	background: #FFCC99;
+}
+
+.tr2{
+	background: #000000;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.tr3{
+	background: #FF9966;
+}
+
+.tr4{
+	background: #FFFFCC;
+}
+
+td{
+	text-align: center;
+	width: 150px;
+}
