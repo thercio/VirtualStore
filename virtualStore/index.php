@@ -16,8 +16,8 @@
 	
         <?php include("header.html"); ?>
 	
-		<table class="table" border="0">
-		<tr class="">
+		<table class="table " border="0">
+		<tr >
 			<td></td>
 			<td></td>
 			<td></td>
@@ -28,7 +28,7 @@
 	
 
 		<tr>
-			<td  colspan="8"><p class="text-center">Lista de produtos</p></td>
+			<td colspan="8"><p class="text-center">Lista de produtos</p></td>
 		</tr>
 		<tr >
 			<td>CÓDIGO</td>
@@ -87,7 +87,7 @@
 		</tr>
 		<?php }
 
-		$conexao->close(); ?>
+		 ?>
 	</table>
 	
 </body>
