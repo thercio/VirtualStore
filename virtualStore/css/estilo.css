@@ -1,6 +1,14 @@
-header{
-	background: #0099aa;
-	color: #eeeeee;
+body{
+    margin: 0px 0px 0px 0px;
+    padding:0px;
+}
+
+a{
+  text-decoration: none;
+ }
+ 
+.logo-1{
+    margin-left:45px;
 }
 
 .tr1{

@@ -2,38 +2,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>Loja Virtual - Início</title>
+    
+	<title>Virtual Store </title>
 	<meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" >
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<header>
-		<h1>Loja Virtual</h1>
-		<h3>thercio01395@hotmail.com</h3>
-		<a href="pagecadastro.php">Cadastrar</a>
+	
+        <?php include("header.html"); ?>
+	
+		<table class="table" border="0">
+		<tr class="">
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+        </tr>
+	
 
-	</header>
-	<form id="form1" name="form1" method="post" action="">
-		<table border="0">
-		<tr class="tr1">
-			<td><input type="submit" name="ListarAll" id="ListarAll" value="Listar Todos" /></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td>Buscar</td>
-			<td>
-				<input type="textfield" name="buscar" />
-			</td>
-			<td><input type="submit" name="Aceitar" id="Aceitar" value="Buscar Produtos" /></td>
+		<tr>
+			<td  colspan="8"><p class="text-center">Lista de produtos</p></td>
 		</tr>
-	</form>
-
-		<tr class="tr2">
-			<td colspan="8">Lista de produtos</td>
-		</tr>
-		<tr class="tr3">
+		<tr >
 			<td>CÓDIGO</td>
 			<td>IMAGEM</td>
 			<td>NOME</td>
@@ -67,9 +64,9 @@
 			
 		?>
 
-		<tr class="tr4">
+		<tr>
 			<td><?php printf("%s\n", $idproduto); ?></td>
-			<td><img src="<?php printf("%s\n", $imagem); ?>" width="100" height="100"/></td>
+			<td><img class="thumbnail" src="<?php printf("%s\n", $imagem); ?>" width="100" height="100"/></td>
 			<td><?php printf("%s\n", $nome); ?></td>
 			<td><?php printf("%s\n", $descricao); ?></td>
 			<td>R$ <?php printf("%s\n", $preco); ?></td>
@@ -81,7 +78,10 @@
 					<input name="nome" type="hidden" value="<?php printf("%s\n", $nome); ?>"/>
 					<input name="preco" type="hidden" value="<?php printf("%s\n", $preco); ?>"/>
 					<input name="quantidade" type="hidden" value="1"/>
-					<input name="Comprar" type="submit" value="Comprar"/>
+                    
+                    <button name="Comprar" type="submit" class="btn btn-success">
+                      Adicionar ao carrinho <span class="icon-glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> 
+                    </button>    
 				</form>
 			</td>
 		</tr>

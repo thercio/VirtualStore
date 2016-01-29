@@ -2,25 +2,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<title>Loja Virtual - Início</title>
+    
+	<title>Virtual Store </title>
 	<meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css" >
+    <script src="js/jquery-2.2.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 
 <body>
-	<header>
-		<h1>Loja Virtual</h1>
-		<h3>thercio01395@hotmail.com</h3>
-		<a href="index.php">Home</a>
-
-	</header>
-	Carrinho de compras
-	<br />
-	<br />
-	<br />
-	Meus produtos escolhidos sao: 
-	<br />
-	<br />
+	
+	<?php include("header.html"); ?>
 	<?php
 		session_start();
 
